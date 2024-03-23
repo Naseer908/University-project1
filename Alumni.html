@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+                integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="slider.css">
+        <title>Alumni</title>
+</head>
+
+<body>
+
+        <!-- navbar -->
+        <nav class="  w-full font-bold h-36  top-0  fixed flex-auto opacity-90 z-40 ">
+                <!-- topnavbar -->
+                <div class=" hidden md:flex bg-red-950 w-screen h-10 justify-end items-center p-4 ">
+                        <button
+                                class="text-white border-yellow-200 mx-3 border-2 px-3  hover:text-red-950 hover:bg-white "><a
+                                        href="">Apply</a></button>
+                        <button
+                                class="text-white border-yellow-200 mx-3 border-2 px-3  hover:text-red-950 hover:bg-white "><a
+                                        href="">Give</a></button>
+                        <button
+                                class="text-white border-yellow-200 mx-3 border-2 px-3  hover:text-red-950 hover:bg-white "><a
+                                        href="">Visit</a></button>
+                        <div class="mx-3 px-3 text-white border-r-2 border-red-600"><a href="">News</a></div>
+                        <div class="mx-3 px-3 text-white border-r-2 border-red-600"><a href="">Get Info</a></div>
+                        <div class="mx-3 px-3 text-white border-r-2 border-red-600"><a href="">My MSK</a></div>
+
+                </div>
+
+                <div class="bg-blue-900  w-screen font-bold h-20   px-4 flex  ">
+
+                        <div class="w-1/2 md:w-32">
+                                <a href="./university.html"><img src="./logo.png" alt="" class="w-32 h-full"></a>
+                        </div>
+                        <!-- sidebar -->
+                        <div class="w-full text-yellow-500 justify-end  lg:hidden h-auto   flex items-center ">
+                                <ul class=" ">
+                                        <li class="group mt-5 "> <i
+                                                        class="ri-menu-search-line icon text-6xl cursor-pointer"></i>
+                                                <ul
+                                                        class="absolute h-96 hidden  text-black  px-4 group-hover:block bg-white w-full left-0 ">
+                                                        <li
+                                                                class="h-10 flex justify-between px-4  items-center hover:bg-black cursor-pointer hover:text-white">
+                                                                <a href="">Academics </a> <i
+                                                                        class="ri-arrow-right-s-line"></i>
+                                                        </li>
+                                                        <hr>
+                                                        <li
+                                                                class="h-10 flex justify-between px-4  items-center hover:bg-black cursor-pointer hover:text-white">
+                                                                <a href="">Admissions & Aid </a> <i
+                                                                        class="ri-arrow-right-s-line"></i>
+                                                        </li>
+                                                        <hr>
+                                                        <li
+                                                                class="h-10 flex justify-between px-4  items-center hover:bg-black cursor-pointer hover:text-white">
+                                                                <a href="">Campus Life </a> <i
+                                                                        class="ri-arrow-right-s-line"></i>
+                                                        </li>
+                                                        <hr>
+                                                        <li
+                                                                class="h-10 flex justify-between px-4  items-center hover:bg-black cursor-pointer hover:text-white">
+                                                                <a href="">About </a> <i
+                                                                        class="ri-arrow-right-s-line"></i>
+                                                        </li>
+                                                        <hr>
+                                                        <li
+                                                                class="h-10 flex justify-between px-4  items-center hover:bg-black cursor-pointer hover:text-white">
+                                                                <a href="./Alumni.html">Alumni </a> <i
+                                                                        class="ri-arrow-right-s-line"></i>
+                                                        </li>
+                                                        <hr>
+                                                        <li
+                                                                class="h-10 flex justify-between px-4  items-center hover:bg-black cursor-pointer hover:text-white">
+                                                                <a href="">Athletics </a> <i
+                                                                        class="ri-arrow-right-s-line"></i>
+                                                        </li>
+                                                        <hr>
+                                                        <div
+                                                                class="w-full border-red-950 flex border-2 pl-4 justify-between">
+                                                                <input type="text" name="" id="" placeholder="Search"
+                                                                        class="w-[100vh] outline-none">
+                                                                <div
+                                                                        class="bg-red-800 text-3xl w-12 text-center cursor-pointer">
+                                                                        <i class="ri-search-line"></i>
+                                                                </div>
+                                                        </div>
+                                                        <div
+                                                                class="flex bg-red-800 w-full h-12 items-center text-white mt-4 text-md justify-around">
+                                                                <div
+                                                                        class="hover:bg-white hover:text-black cursor-pointer rounded-md p-2">
+                                                                        Apply</div>
+                                                                <div
+                                                                        class="hover:bg-white hover:text-black cursor-pointer rounded-md p-2">
+                                                                        Give</div>
+                                                                <div
+                                                                        class="hover:bg-white hover:text-black cursor-pointer rounded-md p-2">
+                                                                        Visit</div>
+                                                                <div
+                                                                        class="hover:bg-white hover:text-black cursor-pointer rounded-md p-2">
+                                                                        News</div>
+                                                                <div
+                                                                        class="hover:bg-white hover:text-black cursor-pointer rounded-md p-2">
+                                                                        Get Info
+                                                                </div>
+                                                                <div
+                                                                        class="hover:bg-white hover:text-black cursor-pointer rounded-md p-2">
+                                                                        My MSK</div>
+                                                        </div>
+                                                </ul>
+                                        </li>
+                                </ul>
+                        </div>
+                        <!-- mainbar -->
+
+                        <div class=" hidden lg:flex w-full   justify-around">
+                                <ul class="text-white group w-auto  hover:text-yellow-200  items-center flex ">
+                                        <li><a href="">ACADEMICS<i class="ri-arrow-down-s-line"></i></a>
+                                                <div
+                                                        class="h-52 pt-8 absolute right-0  w-full hidden group-hover:flex  ">
+                                                        <ul
+                                                                class=" pt-7 text-white  w-fit p-8 text-justify  hidden group-hover:block  bg-blue-950 h-[450px] ">
+                                                                <li
+                                                                        class=" hover:bg-black p-2 text-white hover:text-white">
+                                                                        <a href="">DEPARTMENTS</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Biology &
+                                                                                Biomedical</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Chemical
+                                                                                Engineering</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Chemistry &
+                                                                                Biochemistry</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Civil &
+                                                                                Environmental Engineering</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Computer
+                                                                                Science & Software Engineering</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Engineering
+                                                                                Managment</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Engineering
+                                                                                Design Program</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Mathmatics</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Mechanical
+                                                                                Engineering</a>
+                                                                </li>
+                                                                <hr>
+                                                        </ul>
+                                                        <ul
+                                                                class=" pt-7 text-white  w-fit p-8 text-justify  hidden group-hover:block  bg-blue-950 h-[450px] ">
+                                                                <li class=" hover:bg-black p-2 text-white "><a href=""
+                                                                                class="">EXPLORE</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Undergradutate
+                                                                                programs</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">graduate
+                                                                                programs</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Global
+                                                                                Engagement</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Learning &
+                                                                                Research Facilities</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Competition
+                                                                                Teams </a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href=""> Innovation
+                                                                                Centers</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href=""> Noblitt
+                                                                                Scholars Programs</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href=""> MSK Research
+                                                                                Fellows</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">MSK
+                                                                                Squared</a>
+                                                                </li>
+                                                                <hr>
+
+                                                        </ul>
+                                                        <ul
+                                                                class=" pt-7 text-white  w-fit p-8 text-justify  hidden group-hover:block  bg-blue-950 h-[450px] ">
+                                                                <li class=" hover:bg-black p-2 text-white  font-bold"><a
+                                                                                href="">RESOURCES</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Academic
+                                                                                Affairs Home</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Course
+                                                                                Catalog</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Academic
+                                                                                Calendar</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href=""> Educational
+                                                                                Outreach</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href=""> Logan
+                                                                                Library</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href=""> Faculty &
+                                                                                Directory</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href=""> IRPA</a>
+                                                                </li>
+                                                                <hr>
+                                                        </ul>
+
+                                                </div>
+                                        </li>
+                                </ul>
+
+                                <ul class="text-white group w-auto hover:text-yellow-200  items-center flex">
+                                        <li><a href="">ADMISSION & AID<i class="ri-arrow-down-s-line"></i></a>
+                                                <div class="h-52 pt-8 absolute">
+                                                        <ul
+                                                                class="px-4 pt-7 text-white  w-fit hidden group-hover:block rounded-lg bg-blue-950 h-fit ">
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Why MSK</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Admissions
+                                                                                Office</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href=""> Application &
+                                                                                Deadlines</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Visit</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href=""> Tuition &
+                                                                                Fees</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Scholarships</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Financial
+                                                                                Aid</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Incoming
+                                                                                First-Year Students</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Request for
+                                                                                Information</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Contact
+                                                                                Admissions</a>
+                                                                </li>
+                                                                <hr>
+                                                        </ul>
+                                                </div>
+                                        </li>
+                                </ul>
+                                <ul class="text-white group w-auto hover:text-yellow-200  items-center flex ">
+                                        <li><a href="">CAMPUS LIFE<i class="ri-arrow-down-s-line"></i></a>
+                                                <div class="h-52 pt-8 absolute flex">
+                                                        <ul
+                                                                class=" pt-7 text-white  w-fit p-8 text-justify  hidden group-hover:block  bg-blue-950 h-[550px] ">
+                                                                <li
+                                                                        class=" hover:text-black p-2 text-white hover:bg-blue-400">
+                                                                        <a href="">Housing &
+                                                                                Dining</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href=""> Student
+                                                                                Affairs </a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href=""> Student
+                                                                                Activities</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Sports &
+                                                                                Recreation Center </a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Athletics</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Culture &
+                                                                                Tradition</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Student
+                                                                                Service </a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Learning
+                                                                                Center </a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Performing
+                                                                                Arts</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">MSK Experience
+                                                                        </a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Bookstore </a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Campus Groups
+                                                                        </a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Center of
+                                                                                Diversity </a>
+                                                                </li>
+                                                                <hr>
+                                                        </ul>
+                                                        <ul
+                                                                class=" pt-7 text-white  w-fit p-8 text-justify  hidden group-hover:block  bg-blue-950 h-[550px] ">
+                                                                <li class=" hover:bg-black p-2 text-white "><a href=""
+                                                                                class="">CAREER SERVICES</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">information of
+                                                                                Students </a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Information of
+                                                                                employers</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href=""> Career
+                                                                                Fairs</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href=""> Career
+                                                                                Placement Data </a>
+                                                                </li>
+                                                                <hr>
+
+                                                        </ul>
+                                                </div>
+                                        </li>
+                                </ul>
+                                <ul class="text-white group w-auto  hover:text-yellow-200  items-center flex">
+                                        <li><a href="">ABOUT<i class="ri-arrow-down-s-line"></i></a>
+                                                <div class="h-52 pt-8 absolute flex">
+                                                        <ul
+                                                                class=" px-4 pt-7 text-white  w-fit hidden group-hover:block bg-blue-950 h-[550px] ">
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href=""> about MSK</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href=""> Fast
+                                                                                Facts</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Ranking &
+                                                                                National Distinction</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">President's
+                                                                                Office</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Board of
+                                                                                Trustees</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">History &
+                                                                                Leadership</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Our
+                                                                                Faculty</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Campus
+                                                                                Directory</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Alumni</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Institutional
+                                                                                Advancement</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Employment</a>
+                                                                </li>
+                                                                <hr>
+
+                                                        </ul>
+                                                        <ul
+                                                                class="px-4 pt-7 text-white  w-fit hidden group-hover:block bg-blue-950 h-[550px] ">
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">News &
+                                                                                Events</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">
+                                                                                Communications & Marketing</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">MSK
+                                                                                Parents</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Contacts
+                                                                                Us</a>
+                                                                </li>
+                                                                <hr>
+
+                                                        </ul>
+                                                </div>
+                                        </li>
+                                </ul>
+                                <ul class="text-white group w-auto  hover:text-yellow-200  items-center flex">
+                                        <li><a href="./Alumni.html">ALUMNI<i class="ri-arrow-down-s-line"></i></a>
+                                                <div class="h-fit pt-8 absolute">
+                                                        <ul
+                                                                class=" px-4 pt-7 text-white  w-fit hidden group-hover:block rounded-lg bg-blue-950 h-fit ">
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Alumni
+                                                                                Association</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Awards &
+                                                                                Recognition</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Alumni
+                                                                                Events</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Homecoming</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Stay
+                                                                                Informed</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Services for
+                                                                                Alumni</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Show your
+                                                                                Pride</a>
+                                                                </li>
+                                                                <hr>
+                                                                <li
+                                                                        class=" hover:bg-blue-400 p-2 text-white hover:text-black">
+                                                                        <a href="">Volunteer
+                                                                                opportunities</a>
+                                                                </li>
+                                                                <hr>
+                                                        </ul>
+                                                </div>
+                                        </li>
+                                </ul>
+                                <ul class="text-white group w-auto  hover:text-yellow-200  items-center flex">
+                                        <li><a href="">ATHLETICS</a>
+                                                <div class="h-52 pt-8 absolute">
+
+                                                </div>
+                                        </li>
+                                </ul>
+
+                        </div>
+                        <div class="hidden lg:flex w-96 h-auto  justify-center items-center">
+                                <div class="w-12 hover:w-auto flex group bg-white  h-6 rounded-lg"><i
+                                                class="ri-search-line px-4 cursor-pointer hover:text-yellow-600"></i>
+                                        <input type="text" name="" id="" placeholder="Search"
+                                                class="outline-none rounded-lg hidden group-hover:flex">
+                                </div>
+                        </div>
+                </div>
+        </nav>
+        <!-- main -->
+        <div class="w-full h-[580px]  alumnimain flex items-center">
+                <div class="w-5/6 lg:w-1/2 h-1/2 bg-black opacity-70 p-10 rounded-tr-full">
+                        <div class="w-full h-1/4 text-2xl md:text-3xl lg:text-4xl text-white font-bold p-2 ">ALUMNI &
+                                FRIENDS</div>
+                        <div class="w-full h-1/2 p-8 text-1xl font-bold text-yellow-300">
+                                Here MSK alumni can update their contact information, keep tabs on upcoming events like
+                                Homecoming,
+                                purchase RHIT swag, get involved with the Alumni Association and more!
+                        </div>
+                </div>
+        </div>
+        <!-- main bottom bar -->
+        <div class="flex w-full h-16 bg-gray-400 px-6 items-center ">
+                <div class="w-3/4 h-fit text-red-900  font-bold"><a href="" class="hover:border-b-2 border-red-900"><i
+                                        class="ri-home-8-fill"></i>/ ALUMNI & FRIENDS </a> </div>
+                <div class="w-1/3 md:w-1/4 h-full flex justify-center items-center bg-gray-800 ">
+                        <script>
+                                $('document').ready(function () {
+        
+                                        $('#show').click(function () {
+                                                $('.show').slideDown()
+                                                $('#show').hide()
+                                                $('#hide').show()
+                                                
+                                        })       
+                                        $('#hide').click(function () {
+                                                $('.show').slideUp()
+                                                $('#show').show()
+                                                $('#hide').hide()
+                                                
+                                        })       
+                                });
+                        </script>
+
+                        <div class="font-bold text-sm p-2 md:text-xl lg:text-2xl text-white cursor-pointer   ">
+                                <h1 id="show">IN THIS SECTION <i class="ri-arrow-down-s-fill"></i></h1>
+                                <h2 id="hide" class="hidden">IN THIS SECTION <i class="ri-arrow-up-s-fill"></i> </h2>
+                                <div
+                                        class=" show absolute text-sm md:text-base  py-6   xl:px-16 mt-4 bg-gray-800 w-full h-auto text-white left-0 hidden">
+                                        <div class="w-full border-b-2 text-xl h-8">LINK FOR ALUMNI</div>
+                                        <div class="grid lg:flex ">
+                                                <ul class="left-0 w-full xl:w1/3 px-2 xl:px-4 max-xl:px-10 mt-8">
+
+                                                        <li
+                                                                class="w-fit h-10 py-2 px-2 hover:bg-white hover:text-black text-justify">
+                                                                <a href="">ALUMNI
+                                                                        ASSOCIATION</a>
+                                                        </li>
+                                                        <li
+                                                                class="w-fit h-10 py-2 px-2 hover:bg-white hover:text-black text-justify">
+                                                                <a href="">AWARD &
+                                                                        RECONGNITION</a>
+                                                        </li>
+                                                        <li
+                                                                class="w-fit h-10 py-2 px-2 hover:bg-white hover:text-black text-justify">
+                                                                <a href="">SHOW
+                                                                        YOUR PRIDE</a>
+                                                        </li>
+                                                        <li
+                                                                class="w-fit h-10 py-2 px-2 hover:bg-white hover:text-black text-justify">
+                                                                <a href="">VOLINTEER OPPORTUNITIES</a>
+                                                        </li>
+                                                        <li
+                                                                class="w-fit h-10 py-2 px-2 hover:bg-white hover:text-black text-justify">
+                                                                <a href="">STAY
+                                                                        INFORMED</a>
+                                                        </li>
+                                                </ul>
+                                                <ul class="left-0 w-full xl:w1/3 px-2 xl:px-4 max-xl:px-10 mt-8">
+                                                        <li
+                                                                class="w-fit h-10 py-2 px-2 hover:bg-white hover:text-black text-justify">
+                                                                <a href="">SERVICE
+                                                                        FOR ALUMNI </a>
+                                                        </li>
+                                                        <li
+                                                                class="w-fit h-10 py-2 px-2 hover:bg-white hover:text-black text-justify">
+                                                                <a href="">HOMECOMING</a>
+                                                        </li>
+                                                        <li
+                                                                class="w-fit h-10 py-2 px-2 hover:bg-white hover:text-black text-justify">
+                                                                <a href="">ALUMNI
+                                                                        EVENTS</a>
+                                                        </li>
+                                                        <li
+                                                                class="w-fit h-10 py-2 px-2 hover:bg-white hover:text-black text-justify">
+                                                                <a href="">WAY TO
+                                                                        GIVE </a>
+                                                        </li>
+                                                        <li
+                                                                class="w-fit h-10 py-2 px-2 hover:bg-white hover:text-black text-justify">
+                                                                <a href="">DONATE
+                                                                        KNOW</a>
+                                                        </li>
+                                                </ul>
+                                                </ul>
+                                                <ul class="left-0 w-full xl:w1/3 px-2 xl:px-4 max-xl:px-10 mt-8">
+                                                        <li
+                                                                class="w-fit h-10 py-2 px-2 hover:bg-white hover:text-black text-justify">
+                                                                <a href="">ALUMNI
+                                                                        FACE OF STEM </a>
+                                                        </li>
+                                                        <li
+                                                                class="w-fit h-10 py-2 px-2 hover:bg-white hover:text-black text-justify">
+                                                                <a href="">ALUMNI
+                                                                        REPS TO THE BOT</a>
+                                                        </li>
+                                                        <li
+                                                                class="w-fit h-10 py-2 px-2 hover:bg-white hover:text-black text-justify">
+                                                                <a href="">STEM AT
+                                                                        HOME</a>
+                                                        </li>
+                                                        <li
+                                                                class="w-fit h-10 py-2 px-2 hover:bg-white hover:text-black text-justify">
+                                                                <a href="">SHARE
+                                                                        YOUR MSK MEMORIES </a>
+                                                        </li>
+                                                        <li
+                                                                class="w-fit h-10 py-2 px-2 hover:bg-white hover:text-black text-justify">
+                                                                <a href="">DONATE
+                                                                        KNOW</a>
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <!-- News cards -->
+        <div class="grid md:flex w-full mt-12">
+                <!-- left side -->
+                <div class="w-full md:w-4/6">
+                        <h1 class="w-full text-3xl text-center font-bold p-2 ">READ THE LATEST ALUMNI NEWS</h1>
+                        <div class="grid grid-cols-1  content-center w-full md:grid-cols-2 ">
+                                <div class="px-6 h-full mb-2">
+                                        <h1 class="bg-red-900 text-white text-xl text-center font-bold">ALUMNI AND
+                                                FRIENDS</h1>
+                                        <div class="zoom"><img src="./al1.PNG" alt="" class="h-[300px] w-full"></div>
+                                        <div class="font-bold text-xl">Board of Trustees Add More Expertise with Carla
+                                                McFarland, Dan Price
+                                        </div>
+                                        <a href=""
+                                                class="text-2xl text-red-900 hover:border-b-2 border-red-900 font-bold ">READ
+                                                THE ARTICLE</a>
+                                </div>
+                                <div class="px-6 h-full ">
+                                        <h1 class="bg-red-900 text-white text-center text-xl font-bold">ALUMNI AND
+                                                FRIENDS</h1>
+                                        <div class="zoom"><img src="./al2.png" alt="" class="h-[300px] w-full"></div>
+                                        <div class="font-bold text-xl">Educational Relationship Being Built with
+                                                Carnegie MellonUniversity-Africa</div>
+                                        <a href=""
+                                                class="text-2xl text-red-900 hover:border-b-2 border-red-900 font-bold">READ
+                                                THE ARTICLE</a>
+                                </div>
+
+                        </div>
+                        <div class="w-full flex my-4 justify-center items-center"><button
+                                        class="text-xl font-bold border-2 border-red-800 text-red-800 p-4 hover:bg-red-800 hover:text-white">VIEW
+                                        ALL</button></div>
+                        <!-- xsm card -->
+                        <a href="">
+                                <div class="flex  md:mx-8  w-full h-48 my-2 justify-center   
+                                        border-black border-2">
+                                        <div class="w-1/3 zoom"><img src="./al3.jfif" alt="" class="w-full h-full">
+                                        </div>
+                                        <div class="w-2/3 bg-gray-200 px-4">
+                                                <h1
+                                                        class="text-red-900 hover:text-red-700 text-2xl md:text-3xl font-bold mb-4">
+                                                        ALUMNI PORTAL</h1>
+                                                <div class="text-base md:text-xl font-bold hover:text-gray-700">
+                                                        Update your contact information, check your giving history,
+                                                        search for
+                                                        fellow alums, and more in the Alumni Portal. </div>
+                                        </div>
+                                </div>
+                        </a>
+                        <a href="">
+                                <div class="flex  md:mx-8  w-full h-48 my-2 justify-center   
+                                        border-black border-2">
+                                        <div class="w-1/3 zoom"><img src="./al4.jfif" alt="" class="w-full h-full">
+                                        </div>
+                                        <div class="w-2/3 bg-gray-200 px-4">
+                                                <h1
+                                                        class="text-red-900 text-2xl md:text-3xl hover:text-red-700 font-bold mb-4">
+                                                        HOMECOMING</h1>
+                                                <div class="text-base md:text-xl font-bold hover:text-gray-700">
+                                                        Planing for 2024 or want to relive the fun of 2023?
+                                                        Click here to Learn More!
+                                                </div>
+                                        </div>
+                                </div>
+                        </a>
+                        <a href="">
+                                <div class="flex  md:mx-8  w-full h-48 my-2 justify-center   
+                                        border-black border-2">
+                                        <div class="w-1/3 zoom"><img src="./al5.jfif" alt="" class="w-full h-full">
+                                        </div>
+                                        <div class="w-2/3 bg-gray-200 px-4">
+                                                <h1
+                                                        class="text-red-900 text-2xl md:text-3xl hover:text-red-700 font-bold mb-4">
+                                                        LEGO MSK</h1>
+                                                <div class="text-base md:text-xl font-bold hover:text-gray-700">
+                                                        Order your own LEGO brick version of ICONIC campus Venues.
+                                                </div>
+                                        </div>
+                                </div>
+                        </a>
+                        <a href="">
+                                <div class="flex  md:mx-8  w-full h-48 my-2 justify-center   
+                                        border-black border-2">
+                                        <div class="w-1/3 zoom"><img src="./al6.jfif" alt="" class="w-full h-full">
+                                        </div>
+                                        <div class="w-2/3 bg-gray-200 px-4">
+                                                <h1
+                                                        class="text-red-900 text-2xl md:text-3xl hover:text-red-700 font-bold mb-4">
+                                                        EVENTS</h1>
+                                                <div class="text-base md:text-xl font-bold hover:text-gray-700">
+                                                        Local alumni gatherings, special excursions, Homecoming and
+                                                        more. See the latest events!
+                                                </div>
+                                        </div>
+                                </div>
+                        </a>
+                        <a href="">
+                                <div class="flex  md:mx-8  w-full h-48 my-2 justify-center   
+                                        border-black border-2">
+                                        <div class="w-1/3 zoom"><img src="./al7.jfif" alt="" class="w-full h-full">
+                                        </div>
+                                        <div class="w-2/3 bg-gray-200 px-4">
+                                                <h1
+                                                        class="text-red-900 text-2xl md:text-3xl hover:text-red-700 font-bold mb-4">
+                                                        SHOW YOUR PRIDE</h1>
+                                                <div class="text-base md:text-xl font-bold hover:text-gray-700">
+                                                        Want to let the world know you're proud to be a rose grad?
+                                                        Looking for a Ski Terre Haute poster? Check out the option for
+                                                        showing your RHIT pride.
+                                                </div>
+                                        </div>
+                                </div>
+                        </a>
+                        <a href="">
+                                <div class="flex  md:mx-8  w-full h-48 my-2 justify-center   
+                                        border-black border-2">
+                                        <div class="w-1/3 zoom"><img src="./al8.jfif" alt="" class="w-full h-full">
+                                        </div>
+                                        <div class="w-2/3 bg-gray-200 px-4">
+                                                <h1
+                                                        class="text-red-900 text-2xl md:text-3xl hover:text-red-700 font-bold mb-4">
+                                                        STAY INFORMED</h1>
+                                                <div class="text-base md:text-xl font-bold hover:text-gray-700">
+                                                        Explore the ways you can stay in the loop on campus and alumni
+                                                        news.
+                                                </div>
+                                        </div>
+                                </div>
+                        </a>
+                        <a href="">
+                                <div class="flex  md:mx-8  w-full h-48 my-2 justify-center   
+                                        border-black border-2">
+                                        <div class="w-1/3 zoom"><img src="./al9.jfif" alt="" class="w-full h-full">
+                                        </div>
+                                        <div class="w-2/3 bg-gray-200 px-4">
+                                                <h1
+                                                        class="text-red-900 text-2xl md:text-3xl hover:text-red-700 font-bold mb-4">
+                                                        SERVICES FOR ALUMNI</h1>
+                                                <div class="text-base md:text-xl font-bold hover:text-gray-700">
+                                                        Learn more about services available to our alumni, from
+                                                        transcripts, career placement help and access to the sports and
+                                                        Recreation Center.
+                                                </div>
+                                        </div>
+                                </div>
+                        </a>
+                        <a href="">
+                                <div class="flex  md:mx-8  w-full h-48 my-2 justify-center   
+                                        border-black border-2">
+                                        <div class="w-1/3 zoom"><img src="./al10.jfif" alt="" class="w-full h-full">
+                                        </div>
+                                        <div class="w-2/3 bg-gray-200 px-4">
+                                                <h1
+                                                        class="text-red-900 text-2xl md:text-3xl hover:text-red-700 font-bold mb-4">
+                                                        ALUMNI AWARDS</h1>
+                                                <div class="text-base md:text-xl font-bold hover:text-gray-700">
+                                                        Recongnizing alumni, students, staff and faculty for their
+                                                        service to the institute. Get the details on awards, categories,
+                                                        nominating information.
+                                                </div>
+                                        </div>
+                                </div>
+                        </a>
+                        <a href="">
+                                <div class="flex  md:mx-8  w-full h-48 my-2 justify-center   
+                                        border-black border-2">
+                                        <div class="w-1/3 zoom"><img src="./al11.jfif" alt="" class="w-full h-full">
+                                        </div>
+                                        <div class="w-2/3 bg-gray-200 px-4">
+                                                <h1
+                                                        class="text-red-900 text-2xl md:text-3xl hover:text-red-700 font-bold mb-4">
+                                                        ALUMNI ASSOCIATION</h1>
+                                                <div class="text-base md:text-xl font-bold hover:text-gray-700">
+                                                        The Association strives to foster good fellowship among alumni,
+                                                        a calture of lifelong connection and to provide a liaison
+                                                        between the college and its alumni.
+                                                </div>
+                                        </div>
+                                </div>
+                        </a>
+                        <a href="">
+                                <div class="flex  md:mx-8  w-full h-48 my-2 justify-center   
+                                        border-black border-2">
+                                        <div class="w-1/3 zoom"><img src="./al12.jfif" alt="" class="w-full h-full">
+                                        </div>
+                                        <div class="w-2/3 bg-gray-200 px-4">
+                                                <h1
+                                                        class="text-red-900 text-2xl md:text-3xl hover:text-red-700 font-bold mb-4">
+                                                        VOLUNTEER OPPORTUNITIES</h1>
+                                                <div class="text-base md:text-xl font-bold hover:text-gray-700">
+                                                        stay connected with the MSK with volunteer opportunities that
+                                                        are the right fit for you. learn more about how you can engage
+                                                        at RHIT.
+                                                </div>
+                                        </div>
+                                </div>
+                        </a>
+                        <div class="flex  md:mx-8  w-full h-72 my-2 justify-center   
+                                        border-black border-2">
+                                <div class="w-1/2 zoom"><img src="./chat.jfif" alt="" class="w-full h-full"></div>
+                                <div class="w-1/2 bg-gray-900 px-4">
+                                        <h1 class="text-red-600 text-2xl md:text-3xl hover:text-red-700 font-bold mb-4">
+                                                View the MSK Talks Series</h1>
+                                        <div class="text-base md:text-xl font-bold text-white hover:text-gray-200">
+                                                MSK has some of the world's brightest faculty and alumni. Watch as they
+                                                present on a variety of topics! <br>
+                                                <a href="" class="w-full flex justify-center pt-4"><button
+                                                                class="border-white border-2 p-2 hover:bg-white hover:text-gray-900 w-">Click
+                                                                out the Series</button></a>
+                                        </div>
+                                </div>
+                        </div>
+                        <!-- form -->
+                        <div class="h-[370px] w-full mt-12 overflow-scroll">
+                                <h1
+                                        class="text-red-600 text-xl md:text-2xl lg:text-3xl hover:text-red-700 flex w-full justify-center font-bold mb-4">
+                                        ECHOES CLASS NOTE SUBMISSION FORM</h1>
+                                <div class="flex  md:mx-8  w-[95%] h-72 my-2 justify-center   
+                                        border-black border-2">
+                                        <div class="w-1/2 zoom"><img src="./logo2.png" alt="" class="w-full h-full">
+                                        </div>
+
+                                        <div class="w-1/2 bg-gray-200 px-4">
+
+                                                <h1
+                                                        class="text-red-600 text-base md:text-2xl lg:text-3xl hover:text-red-700 font-bold mb-4">
+                                                        Echoes Class Note Submission Form</h1>
+                                                <div class="text-base md:text-xl font-bold  hover:text-gray-600">
+                                                        Please enter a class note below.
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- form -->
+                                <div class="w-[90%]">
+                                        <div class="w-full mx-2 md:mx-12 border-gray-600 border-2 rounded-md h-10 my-6">
+                                                <input type="text" required placeholder="1.Full Name*"
+                                                        class="w-full h-full px-4">
+                                        </div>
+                                        <div class="w-full mx-2 md:mx-12 border-gray-600 border-2 rounded-md h-10 my-6">
+                                                <input type="email" required placeholder="2.Email Adress*"
+                                                        class="w-full h-full px-4">
+                                        </div>
+                                        <div class="w-full mx-2 md:mx-12 border-gray-600 border-2 rounded-md h-10 my-6">
+                                                <input type="number" required placeholder="3.MSK Class Year*"
+                                                        class="w-full h-full px-4">
+                                        </div>
+                                        <div class="w-full mx-2 md:mx-12 border-gray-600 border-2 rounded-md h-10 my-6">
+                                                <input type="text" required placeholder="4.MSK Major*"
+                                                        class="w-full h-full px-4">
+                                        </div>
+                                        <div class="w-full mx-2 md:mx-12 border-gray-600 border-2 rounded-md h-10 my-6">
+                                                <select name="" id="" class="h-full w-full">
+                                                        <option value="0">5.Choose Announcment type*</option>
+                                                        <option value="1">Marriage Announcment</option>
+                                                        <option value="2">Birthday Announcment</option>
+                                                        <option value="3">Other (describe)</option>
+                                                </select>
+                                        </div>
+
+                                        <div
+                                                class="w-full mx-2 md:mx-12 border-gray-600 border-2 rounded-md h-fit my-6">
+                                                <textarea name="" id=""
+                                                        placeholder="6.Announcment Details* 
+                                                Please provide details of your Announcment (e.g. wedding date and spouses name/child's name and birth date). If your spouse  is also a MSK alumni please include their graduation year and major."
+                                                        cols="30" rows="10" class="w-full px-6"></textarea>
+                                        </div>
+                                        <div class="mx-2 md:mx-12 w-full">6.Please upload a photo for Echoes</div>
+                                        <div class=" mx-2 md:mx-12 rounded-md h-10 my-6">
+                                                <input type="file" required class=" px-4">
+                                        </div>
+
+                                        <div class="w-full h-10 flex px-12 justify-end"><a href=""><button
+                                                                class="bg-blue-900 text-white py-2 px-4 rounded-md focus:bg-blue-700  text-lg font-bold">Submit</button></a>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+
+                <!-- Team -->
+                <script>
+                        $('document').ready(function () {
+
+                                $('#show1').click(function () {
+                                        $('.show1').slideToggle()
+                                })       
+                        });
+                </script>
+
+                <div class="w-full lg:w-1/3  bg-red-200 md:mx-12 mb-10">
+                        <div class="w-full h-auto bg-red-800">
+                                <div id="show1" class="bg-black w-full items-center h-20 md:h-32 text-xl md:text-2xl lg:text-3xl text-white font-bold flex 
+                                        justify-around md:pl-10 cursor-pointer">
+                                        <div >MEET THE ALUMNI RELATIONS TEAM</div>
+                                        
+                                </div>
+                                <!--details  -->
+                                <div class="show1  hidden md:block px-12 py-4 w-full">
+
+                                        <div class="py-2 w-full zoom"><img src="./ep2.jfif" alt="" class="w-full"></div>
+                                        <div class="text-xl text-white h-fit ">
+                                                <div class="border-b-2 border-t-2 py-4 ">
+                                                        <a href="" class="hover:border-b-2 ">Charlie Ricker, Director,
+                                                                812-877-8470 <i class="ri-arrow-right-s-fill"></i></a>
+                                                </div>
+                                        </div>
+
+                                        <div class="py-2 w-full zoom"><img src="./ep1.jfif" alt="" class="w-full"></div>
+                                        <div class="text-xl text-white h-fit ">
+                                                <div class="border-b-2 border-t-2 py-4 ">
+                                                        <a href="" class="hover:border-b-2 ">Caitlin Nash, Assistant
+                                                                Director of Institutional Advancement Communications, +1
+                                                                812-877-8792 <i class="ri-arrow-right-s-fill"></i></a>
+                                                </div>
+                                        </div>
+
+                                        <div class="py-2 w-full zoom"><img src="./ep3.jfif" alt="" class="w-full"></div>
+                                        <div class="text-xl text-white h-fit ">
+                                                <div class="border-b-2 border-t-2 py-4 ">
+                                                        <a href="" class="hover:border-b-2 ">Carrie Bose, Special Events
+                                                                Coordinator, 812-877-8745 <i
+                                                                        class="ri-arrow-right-s-fill"></i></a>
+                                                </div>
+                                        </div>
+
+                                        <div class="py-2 w-full zoom"><img src="./ep4.jfif" alt="" class="w-full"></div>
+                                        <div class="text-xl text-white h-fit ">
+                                                <div class="border-b-2 border-t-2 py-4 ">
+                                                        <a href="" class="hover:border-b-2 ">Holly Kowalski,
+                                                                Administrative Assistant, 812-877-8415 <i
+                                                                        class="ri-arrow-right-s-fill"></i></a>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <script>
+                                $('document').ready(function () {
+        
+                                        $('#show2').click(function () {
+                                                $('.show2').slideToggle()
+                                        })       
+                                });
+                        </script>
+                        <!-- sidebar -->
+
+                        <div class="w-full h-auto bg-red-800 mt-8">
+                                <div id="show2" class="bg-black w-full items-center h-14 md:h-14 text-xl md:text-2xl lg:text-3xl text-white font-bold flex 
+                                        justify-around md:pl-10 cursor-pointer">
+                                        <div class="">STAY CONNECTED</div>
+                                       
+                                </div>
+                                <!--details  -->
+                                <div class="show2  hidden md:block px-12 py-4 w-full">
+                                        <!-- 1 -->
+                                        <div class="py-2 w-full grid justify-center  ">
+                                                <div class="text-white flex text-5xl font-bold pb-4 h-fit"><i
+                                                                class="ri-twitter-fill mr-10"></i>
+                                                        <a href="" class="hover:border-b-2">@MSK</a>
+                                                </div>
+                                                <div class="flex text-white"><img src="./logo2.png" alt=""
+                                                                class="w-10 h-10 rounded-full bg-white">
+                                                        <a href="" class="font-bold ml-4 hover:text-gray-500">MSK <br>
+                                                                @MSK</a>
+                                                        <div class="grid"><i
+                                                                        class="ri-twitter-fill ml-20 text-gray-600 hover:text-white"></i>
+                                                                <p class="ml-4">,Oct 26</p>
+                                                        </div>
+                                                </div>
+                                                <p class="text-white">Great to see endowed electrical & computer
+                                                        engineering professor <a href=""
+                                                                class="font-bold hover:border-b-2">@DrCABerry,</a> PhD,
+                                                        being featured in promotions for this weekend's <a href=""
+                                                                class="font-bold hover:border-b-2">#SWE23</a> in Los
+                                                        Angeles. Our faculty are making a difference in <a href=""
+                                                                class="font-bold hover:border-b-2">#STEMeducation.</a><br><a
+                                                                href="" class="font-bold hover:border-b-2">#womeninSTEM
+                                                                #womenintech</a><br> <a href=""
+                                                                class="font-bold hover:border-b-2">#rosehulman.</a><br>
+                                                        <a href=""
+                                                                class="font-bold hover:border-b-2">https://t.co/KnT2VHHnWJ</a>
+                                                </p>
+                                        </div>
+
+                                        <div class="py-2 w-full zoom"><img src="./ep6.jfif" alt="" class="w-full"></div>
+                                        <div class="text-xl text-white h-fit ">
+                                                <div class="border-b-2 border-t-2 py-4 ">
+                                                        <a href="" class="mx-2"> <i class="ri-chat-1-line"></i> 2</a>
+                                                        <a href="" class="mx-2"> <i class="ri-repeat-fill"></i> 7</a>
+                                                        <a href="" class="mx-2"> <i class="ri-heart-line"></i> 4</a>
+                                                        <a href="" class="ml-14"> <i
+                                                                        class="ri-share-forward-2-fill"></i> Share</a>
+                                                </div>
+                                        </div>
+
+                                        <!-- 2 -->
+                                        <div class="py-2 w-full grid justify-center  ">
+                                                <div class="text-white flex text-5xl font-bold pb-4 h-fit"><i
+                                                                class="ri-facebook-fill mr-10"></i>
+                                                        <a href="" class="hover:border-b-2">@MSK</a>
+                                                </div>
+                                                <div class="flex text-white items-center w-full"><img src="./logo2.png"
+                                                                alt="" class="w-10 h-10 rounded-full bg-white">
+                                                        <a href="" class="font-bold ml-4 hover:text-gray-500">MSK
+                                                                Institute of IT </a>
+                                                        <p class="ml-4">,13 hours ago</p>
+                                                </div>
+                                                <p class="text-white  my-4">Game day, here we come! 🏀📣</p>
+                                                <p class="text-white  ">Women's basketball schedule <br>
+                                                        <a href=""
+                                                                class="text-start flex hover:text-blue-700 text-blue-500">https://athletics.MSK.edu/sports/womens-basketball</a>
+                                                </p>
+                                                <p class="text-white font-bold my-3 text-center">MSK Fightin' Engineers
+                                                        Athletics</p>
+
+
+                                        </div>
+                                       
+                                        <div class="py-2 w-full zoom"><img src="./ep7.PNG" alt="" class="w-full"></div>
+                                        <div class="text-xl text-white h-fit ">
+                                                <div class="border-b-2  border-t-2 py-4 ">
+                                                        <div class="flex">
+                                                                <a href="" class="text-xl "><i
+                                                                                class="ri-thumb-up-fill text-blue-900"></i><i
+                                                                                class="ri-heart-fill text-red-950"></i><i
+                                                                                class="ri-emotion-fill text-yellow-500"></i></a>
+                                                                <div class="text-sm flex justify-between items-center">
+                                                                        <p class="">154</p>
+                                                                        <p class="ml-4">19 comments</p>
+                                                                        <p class="ml-4">3 share</p>
+                                                                </div>
+                                                        </div>
+                                                        <div class="">
+                                                                <button
+                                                                        class="bg-gray-950 px-8 py-2 rounded-lg opacity-60">
+                                                                        <p class="text-white opacity-100"><i
+                                                                                        class="ri-share-forward-fill"></i>Share
+                                                                        </p>
+                                                                </button>
+
+                                                        </div>
+                                                        <button class="bg-gray-950 px-8 py-2 mt-8 rounded-lg opacity-60 w-full">
+                                                                <P class="text-white opacity-100">Load More
+                                                                </P>
+                                                        </button>
+                                                </div>
+                                        </div>
+                                        <div class="text-white flex text-5xl font-bold pb-4 h-fit"><i class="ri-instagram-line"></i>
+                                        <a href="" class="hover:border-b-2">@MSK</a>
+                                </div>
+                                        <div class="py-2 w-full zoom"><img src="./ep8.jfif" alt="" class="w-full"></div>
+                                        
+                                </div>
+                                
+
+
+                            
+                        </div>
+                </div>
+
+        </div>
+        </div>
+
+        <!-- Video -->
+        <div class="w-full  h-[400px] overflow-hidden">
+                <video src="./video.mp4" controls class="w-screen h-[800px]-z-10 text-red-700"> </video>
+        </div>
+        <!-- footer  -->
+        <footer class="w-full  h-auto footer mt-12   ">
+                <div class="bg-blue-900 opacity-90 h-full">
+
+                        <div class=" flex-auto md:flex bg-blue-900 w-full h-[80%]  pt-10 ">
+                                <div class="pl-2  md:pl-4 w-auto bg-blue-900  h-[70%]       text-white">
+                                        <h1 class="text-4xl font-bold text-red-950 flex w-full pl-12 ">MSK </h1>
+                                        <img src="./logo.png" alt="" class="justify-center">
+                                        <div class="text-lg text-justify">
+                                                5500 Wabash Avenue <br>
+                                                Terre Haute, IN 47803 <br>
+                                                <a href="" class="text-xl  hover:text-yellow-400"><i
+                                                                class="ri-phone-fill"></i>(812)
+                                                        877-1511</a><br>
+                                                <a href="" class="text-xl  hover:text-yellow-400"><i
+                                                                class="ri-mail-fill"></i>Contact Us</a>
+                                        </div>
+                                        <div class="flex  text-3xl">
+                                                <a href=""><i
+                                                                class="ri-facebook-box-fill hover:text-yellow-400 mx-2 "></i></a>
+                                                <a href=""><i
+                                                                class="ri-youtube-fill hover:text-yellow-400 mx-2"></i></a>
+                                                <a href=""><i
+                                                                class="ri-instagram-fill hover:text-yellow-400 mx-2"></i></a>
+                                                <a href=""><i
+                                                                class="ri-twitter-fill hover:text-yellow-400 mx-2"></i></a>
+                                                <a href=""><i
+                                                                class="ri-linkedin-box-fill hover:text-yellow-400 mx-2"></i></a>
+                                        </div>
+                                </div>
+
+
+                                <div class=" mt-8  md:pl-2 bg-blue-900 px-2 w-auto h-[70%] flex-auto  ">
+                                        <h1 class="text-2xl  font-bold text-white mb-4 border-b-2 text-center ">
+                                                Resources </h1>
+
+                                        <div class="my-2 "> <a href="" class="text-white  hover:border-b-2 ">ACADEMIC
+                                                        CALENDAR</a></div>
+                                        <div class="my-2"> <a href="" class="text-white  hover:border-b-2 ">CATALOG </a>
+                                        </div>
+                                        <div class="my-2"> <a href="" class="text-white  hover:border-b-2 ">DIRECTOR
+                                                </a></div>
+                                        <div class="my-2"> <a href="" class="text-white  hover:border-b-2 ">MY MSK </a>
+                                        </div>
+                                        <div class="my-2"> <a href="" class="text-white  hover:border-b-2 ">MAP &
+                                                        DIRECTIONS </a></div>
+
+
+                                </div>
+
+                                <div class=" mt-8 md:pl-2 bg-blue-900 px-2 w-auto h-[70%] flex-auto text-justify">
+                                        <h1 class="text-2xl font-bold text-white mb-4 text-center border-b-2 ">Quick
+                                                Links
+
+                                        </h1>
+
+                                        <div class="my-2  "> <a href=""
+                                                        class="text-white  hover:border-b-2 ">ADMISSIONS</a></div>
+                                        <div class="my-2"> <a href="" class="text-white  hover:border-b-2 ">EMPLOYMENT
+                                                </a></div>
+                                        <div class="my-2 "> <a href="" class="text-white  hover:border-b-2 ">GIVE </a>
+                                        </div>
+                                        <div class="my-2 "> <a href="" class="text-white  hover:border-b-2 ">BOOKSTORE
+                                                </a></div>
+                                        <div class="my-2 "> <a href="" class="text-white  hover:border-b-2 ">LOGAN
+                                                        LIBRARY </a></div>
+                                        <div class="my-2 "> <a href="" class="text-white  hover:border-b-2 ">OFFICE &
+                                                        SERVICES </a>
+                                        </div>
+                                        <div class="my-2 "> <a href=""
+                                                        class="text-white  hover:border-b-2 ">ATHILETICS</a></div>
+                                        <div class="my-2 "> <a href="" class="text-white  hover:border-b-2 ">HEERF
+                                                        II</a></div>
+                                        <div class="my-2 "> <a href=""
+                                                        class="text-white  hover:border-b-2 ">COVID-19</a></div>
+                                        <div class="my-2 "> <a href=""
+                                                        class="text-white  hover:border-b-2 ">ACCREDITATION</a></div>
+
+                                </div>
+
+                                <div class=" mt-8 md:pl-2 bg-blue-900 px-2 w-auto h-[70%] flex-auto text-justify">
+                                        <h1 class="text-2xl font-bold text-white mb-4 w-full text-center border-b-2">
+                                                Information For
+
+                                        </h1>
+
+                                        <div class="my-2 "> <a href="" class="text-white  hover:border-b-2 ">ACADEMIC
+                                                        CALENDAR</a></div>
+                                        <div class="my-2"> <a href="" class="text-white  hover:border-b-2 ">FUTURE
+                                                        STUDENTS </a></div>
+                                        <div class="my-2"> <a href="" class="text-white  hover:border-b-2 ">INCOMING
+                                                        STUDENTS </a></div>
+                                        <div class="my-2"> <a href="" class="text-white  hover:border-b-2 ">CURRENT
+                                                        STUDENTS </a></div>
+                                        <div class="my-2"> <a href="" class="text-white  hover:border-b-2 ">GRADUATE
+                                                        STUDENTS </a></div>
+                                        <div class="my-2"> <a href="" class="text-white  hover:border-b-2 ">PARENTS </a>
+                                        </div>
+                                        <div class="my-2"> <a href="" class="text-white  hover:border-b-2 ">ALUMNI &
+                                                        FRIENDS </a></div>
+                                        <div class="my-2"> <a href="" class="text-white  hover:border-b-2 ">FACULTY &
+                                                        STAFF </a></div>
+                                        <div class="my-2"> <a href="" class="text-white  hover:border-b-2 ">COMMUNITY
+                                                        MEMBERS </a></div>
+                                        <div class="my-2"> <a href="" class="text-white  hover:border-b-2 ">MEDIA </a>
+                                        </div>
+
+
+
+                                </div>
+                        </div>
+
+
+
+                        <div class="py-6 px-4 text-white">
+                                <p class="text-sm">© 2023 Rose-Hulman Institute of Technology</p>
+                                <div class="text-sm flex mt-2 w-full ">
+                                        <a href=""
+                                                class="border-r-2 border-white w-20 hover:bg-white px-2 hover:text-black">Privacy</a>
+                                        <a href=""
+                                                class="border-r-2 border-white w-auto flex hover:bg-white px-2 hover:text-black">Accessibility</a>
+                                        <a href=""
+                                                class="border-r-2  border-white w-auto flex hover:bg-white px-2 hover:text-black">Title
+                                                IX</a>
+                                        <a href=""
+                                                class="border-r-2 border-white w-auto flex hover:bg-white px-2 hover:text-black">Consumer
+                                                Information</a>
+                                        <a href=""
+                                                class="border-r-2 border-white w-auto flex hover:bg-white px-2 hover:text-black">Emergency</a>
+                                </div>
+                        </div>
+        </footer>
+</body>
+
+</html>
